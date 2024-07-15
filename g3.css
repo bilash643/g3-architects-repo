@@ -9,3 +9,71 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+/* dark02 */
+.text-gray{
+color: #424242;
+}
+/* dark03 */
+.text-light-gray{
+color: #727272;
+}
+.bg-ligth{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+/* header styles */
+
+/* navbar related style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
+/* navbar styles */
+.nav-item{
+    list-style:none ;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: medium;
+}
+.nav-bar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.btn{
+    background-color:rgba(255, 144, 14, 1);
+   width: 180px;
+   height: 65px;
+}
+/* banner related content */
+.banner-content{
+    max-width: 850px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+   
+}
+.banner img{
+    width: 100%;
+}
+/* responsive media query */
+@media screen and (max-width:575px) {
+    .nav-bar, .nav-link{
+        flex-direction: column;
+    }
+}
